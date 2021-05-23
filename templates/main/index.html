@@ -1,0 +1,276 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href={% static 'css/main.css' %}>
+{% endblock %}
+
+{% block content %}
+    {#    Rounded classes list#}
+    <div class="row a-classes">
+        <div class="col-12 mt-2 mb-2">
+            <h4 class="font-weight-bold">Sinflar</h4>
+        </div>
+        <div class="col-12 d-flex">
+            <a class="a-class a-class-size d-inline-flex bg-danger rounded-circle text-decoration-none mr-3">
+                <span class="my-auto text-white mx-auto">5-B</span>
+            </a>
+            <a class="a-class a-class-size d-inline-flex bg-warning rounded-circle text-decoration-none mr-3">
+                <span class="my-auto text-white mx-auto">6-B</span>
+            </a>
+        </div>
+    </div>
+    {#    /////////////////////#}
+    {#    Menyular#}
+    <div class="a-menus row mt-3">
+        <div class="col-12 d-flex justify-content-around text-center">
+            <div class="a-menu border-bottom border-dark d-inline mr-1 pb-2">
+                <span class="font-weight-bold">Ro'yxat</span>
+            </div>
+            <div class="a-menu border-bottom d-inline mr-2 pb-2">
+                <span>Baholash</span>
+            </div>
+            <div class="a-menu border-bottom d-inline mr-2 pb-2">
+                <span>Jurnal</span>
+            </div>
+            <div class="a-menu border-bottom d-inline mr-2 pb-2">
+                <span>Vazifa yuklash</span>
+            </div>
+        </div>
+    </div>
+    {#    /////////////////////#}
+    {#    Number of students#}
+    <div class="row mt-3">
+        <div class="a-student-class col-12 mb-3 text-decoration-none" style="color: black">
+            <div class="media d-flex align-items-center">
+                <div class="media-body d-inline-flex">
+                    <h5 class="p-1 my-auto border border-dark">5-B sinf</h5>
+                    <h5 class="p-1 ml-auto my-auto border border-dark">32 students</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    {#    /////////////////////#}
+    {#    Students list#}
+    <div class="a-students row">
+        <a href="#" class="a-student col-12 mb-2 text-decoration-none" style="color: black">
+            <div class="media d-flex align-items-center">
+                <img src="{% static 'img/no_avatar.png' %}" class="mr-3 a-class-size" alt="...">
+                <div class="media-body d-flex">
+                    <h6 class="my-auto">Abdumalikov Tohir</h6>
+                    <span class="badge badge-success ml-auto">Tekshirildi</span>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="a-student col-12 mb-2 text-decoration-none" style="color: black">
+            <div class="media d-flex align-items-center">
+                <img src="{% static 'img/no_avatar.png' %}" class="mr-3 a-class-size" alt="...">
+                <div class="media-body d-flex">
+                    <h6 class="my-auto">Murodov Kamol</h6>
+                    <span class="badge badge-danger ml-auto">Hali tekshirilmadi</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    {#    /////////////////////#}
+    {#    Baholash#}
+    <div class="a-baholash row" style="display: none">
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Jurnalga tushirish</button>
+        </div>
+        <div class="a-enter-date col-12 mt-3">
+            <div class="form-row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect">Oyni tanlang</label>
+                        <select class="form-control" id="exampleFormControlSelect">
+                            <option>Mart</option>
+                            <option>Fevral</option>
+                            <option>Yanvar</option>
+                            <option>Dekabr</option>
+                            <option>Noyabr</option>
+                            <option>Oktabr</option>
+                            <option>Sentabr</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect">Kunni tanlang</label>
+                        <select class="form-control" id="exampleFormControlSelect">
+                            <option>19</option>
+                            <option>17</option>
+                            <option>14</option>
+                            <option>12</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a-student-baho col-12">
+            <div class="input-group mb-3">
+                <div class="media d-flex align-items-center">
+                    <img src="{% static 'img/no_avatar.png' %}" class="mr-3 a-class-size" alt="...">
+                    <div class="media-body d-flex">
+                        <h6 class="my-auto">Abdumalikov Tohir</h6>
+                    </div>
+                </div>
+                <div class="input-group-prepend ml-auto">
+                    <span class="input-group-text">5</span>
+                </div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a-student-baho col-12">
+            <div class="input-group mb-3">
+                <div class="media d-flex align-items-center">
+                    <img src="{% static 'img/no_avatar.png' %}" class="mr-3 a-class-size" alt="...">
+                    <div class="media-body d-flex">
+                        <h6 class="my-auto">Murodov Komil</h6>
+                    </div>
+                </div>
+                <div class="input-group-prepend ml-auto">
+                    <span class="input-group-text">4</span>
+                </div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a-student-baho col-12">
+            <div class="input-group mb-3">
+                <div class="media d-flex align-items-center">
+                    <img src="{% static 'img/no_avatar.png' %}" class="mr-3 a-class-size" alt="...">
+                    <div class="media-body d-flex">
+                        <h6 class="my-auto">Temirov Sanjar</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {#    /////////////////////#}
+    {#    Jurnal#}
+    <div class="a-jurnal row" style="display: none">
+        <div class="a-mavzu-qoshish col-12">
+            <div class="card">
+                <div class="card-header text-center">Yangi mavzuni qo'shish</div>
+                <form>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea">Mavzu nomi</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="sana">Mavzu sanasi</label>
+                            <input type="date" class="form-control" id="sana">
+                        </div>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile">
+                                <label class="custom-file-label" for="inputGroupFile">Mavzuning fayl ko'rinishi</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex">
+                        <button type="submit" class="btn btn-primary ml-auto">Qo'shish</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="a-mavzular col-12 mt-3">
+            <ul class="a-mavzu list-group list-group-horizontal">
+                <li class="list-group-item w-75">Nyutonning birinchi qonuni</li>
+                <li class="list-group-item w-25">12-fevral, 2021</li>
+            </ul>
+            <ul class="a-mavzu list-group list-group-horizontal">
+                <li class="list-group-item w-75">Zichlik</li>
+                <li class="list-group-item w-25">10-fevral, 2021</li>
+            </ul>
+            <ul class="a-mavzu list-group list-group-horizontal">
+                <li class="list-group-item w-75">Tezlanish va tezlik</li>
+                <li class="list-group-item w-25">7-fevral, 2021</li>
+            </ul>
+        </div>
+    </div>
+    {#    /////////////////////#}
+    {#    Vazifa yuklash#}
+    <div class="a-vazifa-yuklash row" style="display: none">
+        <div class="a-vazifa-qoshish col-12">
+            <div class="card">
+                <div class="card-header text-center">Yangi vazifa qo'shish</div>
+                <form>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea">Vazifa matni</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">Vazifa sanasini kiriting</div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Mart</option>
+                                        <option>Fevral</option>
+                                        <option>Yanvar</option>
+                                        <option>Dekabr</option>
+                                        <option>Noyabr</option>
+                                        <option>Oktabr</option>
+                                        <option>Sentabr</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>19</option>
+                                        <option>17</option>
+                                        <option>14</option>
+                                        <option>12</option>
+                                        <option>10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile">
+                                <label class="custom-file-label" for="inputGroupFile">Vazifa fayl ko'rinishida</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex">
+                        <button type="submit" class="btn btn-primary ml-auto">Qo'shish</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="a-vazifalar col-12 mt-3">
+            <ul class="a-mavzu list-group list-group-horizontal">
+                <li class="list-group-item w-75">Nyutonning birinchi qonuni</li>
+                <li class="list-group-item w-25">12-fevral, 2021</li>
+            </ul>
+            <ul class="a-mavzu list-group list-group-horizontal">
+                <li class="list-group-item w-75">Zichlik</li>
+                <li class="list-group-item w-25">10-fevral, 2021</li>
+            </ul>
+            <ul class="a-mavzu list-group list-group-horizontal">
+                <li class="list-group-item w-75">Tezlanish va tezlik</li>
+                <li class="list-group-item w-25">7-fevral, 2021</li>
+            </ul>
+        </div>
+    </div>
+    {#    /////////////////////#}
+{% endblock %}
+
+{% block js %}
+    <script src={% static 'js/main.js' %}></script>
+{% endblock %}

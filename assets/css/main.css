@@ -1,24 +1,8 @@
-.cover {
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+.a-class-size {
+    width: 48px;
+    height: 48px;
 }
 
-.user-avatar {
-    width: 38px;
-    height: 38px;
-}
-
-.lang_link {
-    font-size: 1.7rem;
-}
-
-.cat-img {
-    width: 16px;
-    height: 16px;
-}
-
-.m-p {
-    margin: 0 !important;
-    padding: 0 !important;
+.a-students ,.a-baholash, .a-jurnal, .a-vazifa-yuklash {
+    cursor: pointer;
 }
