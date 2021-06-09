@@ -1,0 +1,43 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/fan.css' %}">
+{% endblock %}
+
+{% block home %}{% url 'student:account' %}{% endblock %}
+
+{% block content %}
+    <div class="row mt-3">
+        <div class="a-homework col-12 mb-2 text-decoration-none" style="color: black">
+            <div class="card border-0">
+                <div class="card-header media d-flex align-items-center border">
+                    <div class="media-body d-flex">
+                        <h5 class="mx-auto my-auto">Matematika</h5>
+                    </div>
+                </div>
+                <ul class="list-group border-0">
+                    <li class="list-group-item w-100 border-bottom d-flex">
+                        <a href="#" class="mx-auto"><i class="bi-file-earmark-arrow-down"></i>Darslikni ko'chirib olish</a>
+                    </li>
+                    <li class="list-group-item w-100 border-bottom d-flex a-bg-mavzu">
+                        <span class="mx-auto text-secondary">Kvadrat tenglamani yechish</span>
+                    </li>
+                    <li class="list-group-item w-100 border-bottom d-flex">
+                        <a href="#" class="mx-auto"><i class="bi-file-earmark-arrow-down"></i>Misollar.pdf</a>
+                    </li>
+                    <li class="list-group-item w-100 border-bottom d-flex a-bg-mavzu">
+                        <span class="mx-auto text-secondary">Diskriminat</span>
+                    </li>
+                    <li class="list-group-item w-100 border-bottom d-flex">
+                        <a href="#" class="mx-auto"><i class="bi-file-earmark-arrow-down"></i>Prosolov.pdf</a>
+                    </li>
+                    <li class="list-group-item w-100 border-bottom d-flex">
+                        <a href="#" class="mx-auto"><i class="bi-file-earmark-arrow-down"></i>Ptolomey masalalari.pdf</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

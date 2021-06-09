@@ -1,0 +1,67 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+
+{% block home %}{% url 'student:account' %}{% endblock %}
+
+{% block content %}
+    <div class="row mt-3">
+        <div class="a-homework col-12 mb-2 text-decoration-none" style="color: black">
+            <div class="card">
+                <div class="card-header media d-flex align-items-center">
+                    <div class="media-body d-flex">
+                        <h5 class="mx-auto my-auto">Ona tili</h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div>
+                                <span class="bg-primary text-white rounded p-2 d-block w-75">Uyga vazifa<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at expedita explicabo facere impedit ipsum odio officiis perferendis porro possimus quaerat quibusdam quidem repellat reprehenderit vel vitae voluptate, voluptatem, voluptatibus.</span>
+                            </div>
+                            <div class="d-flex w-75">
+                                <small class="text-secondary ml-auto">12-mart, 2021</small>
+                            </div>
+                            <div class="d-flex">
+                                <span class="bg-success text-white rounded p-2 w-50 ml-auto mt-2 w-75 d-block">Javob<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at expedita explicabo facere impedit ipsum odio officiis perferendis porro possimus quaerat quibusdam quidem repellat reprehenderit vel vitae voluptate, voluptatem, voluptatibus.</span>
+                            </div>
+                            <div class="d-flex w-100">
+                                <small class="text-secondary ml-auto ml-1">13-mart, 2021</small>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex">
+                            <span>Baholandi: 5</span>
+                            <small class="ml-auto text-secondary">13-mart, 2021</small>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div>
+                                <span class="bg-primary text-white rounded p-2 d-block w-75">Uyga vazifa<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at expedita explicabo facere impedit ipsum odio officiis perferendis porro possimus quaerat quibusdam quidem repellat reprehenderit vel vitae voluptate, voluptatem, voluptatibus.</span>
+                            </div>
+                            <div class="d-flex w-75">
+                                <small class="text-secondary ml-auto">15-mart, 2021</small>
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Javob matni</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                               aria-describedby="inputGroupFileAddon01">
+                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <button type="submit" class="btn btn-primary ml-auto">Yuborish</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

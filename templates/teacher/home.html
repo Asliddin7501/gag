@@ -12,10 +12,10 @@
             <h4 class="font-weight-bold">Sinflar</h4>
         </div>
         <div class="col-12 d-flex">
-            <a class="a-class a-class-size d-inline-flex bg-danger rounded-circle text-decoration-none mr-3">
+            <a href="#" class="a-class a-class-size d-inline-flex bg-danger rounded-circle text-decoration-none mr-3">
                 <span class="my-auto text-white mx-auto">5-B</span>
             </a>
-            <a class="a-class a-class-size d-inline-flex bg-warning rounded-circle text-decoration-none mr-3">
+            <a href="#" class="a-class a-class-size d-inline-flex bg-warning rounded-circle text-decoration-none mr-3">
                 <span class="my-auto text-white mx-auto">6-B</span>
             </a>
         </div>
@@ -53,7 +53,7 @@
     {#    /////////////////////#}
     {#    Students list#}
     <div class="a-students row">
-        <a href="#" class="a-student col-12 mb-2 text-decoration-none" style="color: black">
+        <a href="{% url 'teacher:baholash' %}" class="a-student col-12 mb-2 text-decoration-none" style="color: black">
             <div class="media d-flex align-items-center">
                 <img src="{% static 'img/no_avatar.png' %}" class="mr-3 a-class-size" alt="...">
                 <div class="media-body d-flex">
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </a>
-        <a href="#" class="a-student col-12 mb-2 text-decoration-none" style="color: black">
+        <a href="{% url 'teacher:baholash' %}" class="a-student col-12 mb-2 text-decoration-none" style="color: black">
             <div class="media d-flex align-items-center">
                 <img src="{% static 'img/no_avatar.png' %}" class="mr-3 a-class-size" alt="...">
                 <div class="media-body d-flex">
@@ -110,12 +110,12 @@
         </div>
         <div class="a-student-baho col-12">
             <div class="input-group mb-3">
-                <div class="media d-flex align-items-center">
+                <a href="{% url 'teacher:baholash' %}" class="media d-flex align-items-center text-decoration-none text-dark">
                     <img src="{% static 'img/no_avatar.png' %}" class="mr-3 a-class-size" alt="...">
                     <div class="media-body d-flex">
                         <h6 class="my-auto">Abdumalikov Tohir</h6>
                     </div>
-                </div>
+                </a>
                 <div class="input-group-prepend ml-auto">
                     <span class="input-group-text">5</span>
                 </div>
@@ -128,12 +128,12 @@
         </div>
         <div class="a-student-baho col-12">
             <div class="input-group mb-3">
-                <div class="media d-flex align-items-center">
+                <a href="{% url 'teacher:baholash' %}" class="media d-flex align-items-center text-decoration-none text-dark">
                     <img src="{% static 'img/no_avatar.png' %}" class="mr-3 a-class-size" alt="...">
                     <div class="media-body d-flex">
                         <h6 class="my-auto">Murodov Komil</h6>
                     </div>
-                </div>
+                </a>
                 <div class="input-group-prepend ml-auto">
                     <span class="input-group-text">4</span>
                 </div>
@@ -146,12 +146,12 @@
         </div>
         <div class="a-student-baho col-12">
             <div class="input-group mb-3">
-                <div class="media d-flex align-items-center">
+                <a href="{% url 'teacher:baholash' %}" class="media d-flex align-items-center text-decoration-none text-dark">
                     <img src="{% static 'img/no_avatar.png' %}" class="mr-3 a-class-size" alt="...">
                     <div class="media-body d-flex">
                         <h6 class="my-auto">Temirov Sanjar</h6>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -269,7 +269,7 @@
         </div>
     </div>
     {#    /////////////////////#}
-{% endblock %}
+{% endblock %}main
 
 {% block js %}
     <script src={% static 'js/main.js' %}></script>

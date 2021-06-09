@@ -1,0 +1,246 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/account.css' %}">
+{% endblock %}
+
+{% block home %}{% url 'student:account' %}{% endblock %}
+
+{% block content %}
+    {#    Student info#}
+    <div class="a-student-info row mt-3">
+        <div class="col-12 text-center">
+            <span class="font-weight-bold d-block" style="font-size: 20px">Abdumalikov Tohir</span>
+            <small class="text-secondary">6-A sinf</small>
+        </div>
+        <div class="col-12 d-flex justify-content-around align-items-center">
+            <img src="{% static 'img/no_avatar.png' %}" class="a-image-size rounded-circle" alt="">
+            <span class="font-weight-bolder">12ta fan</span>
+        </div>
+    </div>
+    {#    /////////////////////#}
+    {#    Menyular#}
+    <div class="a-menus row mt-3">
+        <div class="col-12 d-flex justify-content-around text-center">
+            <div class="a-menu border-bottom border-dark d-inline mr-1 pb-2">
+                <span class="font-weight-bold">Uyga vazifalar</span>
+            </div>
+            <div class="a-menu border-bottom d-inline mr-2 pb-2">
+                <span>Fanlar</span>
+            </div>
+            <div class="a-menu border-bottom d-inline mr-2 pb-2">
+                <span>Dars jadvali</span>
+            </div>
+            <div class="a-menu border-bottom d-inline mr-2 pb-2">
+                <span>E'lonlar</span>
+            </div>
+        </div>
+    </div>
+    {#    /////////////////////#}
+    {#    Homeworks#}
+    <div class="a-homeworks row mt-3">
+        <div class="a-muddat col-12 mb-3 text-decoration-none" style="color: black">
+            <div class="media d-flex align-items-center">
+                <div class="media-body d-inline-flex">
+                    <h5 class="p-1 my-auto border border-dark">Ertaga (yoki Bugun)</h5>
+                </div>
+            </div>
+        </div>
+        <a href="{% url 'student:homework' %}" class="a-homework col-12 mb-2 text-decoration-none" style="color: black">
+            <div class="media d-flex align-items-center">
+                <div class="a-class d-inline-flex bg-danger rounded-pill text-decoration-none mr-3">
+                    <span class="my-auto text-white mx-auto p-2">Ona tili</span>
+                </div>
+                <div class="media-body d-flex">
+                    <div class="ml-auto">
+                        <span class="badge badge-danger">Bajarilmadi</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'student:homework' %}" class="a-homework col-12 mb-2 text-decoration-none" style="color: black">
+            <div class="media d-flex align-items-center">
+                <div class="a-class d-inline-flex bg-warning rounded-pill text-decoration-none mr-3">
+                    <span class="my-auto text-white mx-auto p-2">Matematika</span>
+                </div>
+                <div class="media-body d-flex">
+                    <div class="ml-auto">
+                        <span class="badge badge-success">Bajarildi</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'student:homework' %}" class="a-homework col-12 mb-2 text-decoration-none" style="color: black">
+            <div class="media d-flex align-items-center">
+                <div class="a-class d-inline-flex bg-info rounded-pill text-decoration-none mr-3">
+                    <span class="my-auto text-white mx-auto p-2">Tasviriy san'at</span>
+                </div>
+                <div class="media-body d-flex">
+                    <div class="ml-auto">
+                        <span class="badge badge-danger">Bajarilmadi</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'student:homework' %}" class="a-homework col-12 mb-2 text-decoration-none" style="color: black">
+            <div class="media d-flex align-items-center">
+                <div class="a-class d-inline-flex bg-primary rounded-pill text-decoration-none mr-3">
+                    <span class="my-auto text-white mx-auto p-2">Fizika</span>
+                </div>
+                <div class="media-body d-flex">
+                    <div class="ml-auto">
+                        <span class="badge badge-success">Bajarildi</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="a-muddat col-12 mb-3 text-decoration-none mt-2" style="color: black">
+            <div class="media d-flex align-items-center">
+                <div class="media-body d-inline-flex">
+                    <h5 class="p-1 my-auto border border-dark">Boshqa kunlar</h5>
+                </div>
+            </div>
+        </div>
+        <a href="{% url 'student:homework' %}" class="a-homework col-12 mb-2 text-decoration-none" style="color: black">
+            <div class="media d-flex align-items-center">
+                <div class="a-class d-inline-flex bg-success rounded-pill text-decoration-none mr-3">
+                    <span class="my-auto text-white mx-auto p-2">Ingliz tili</span>
+                </div>
+                <div class="media-body d-flex">
+                    <div class="ml-auto">
+                        <span class="badge badge-danger">Bajarilmadi</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    {#    /////////////////////#}
+    {#    Fanlar#}
+    <div class="a-fanlar row mt-3" style="display: none">
+        <a href="{% url 'student:fan' %}" class="a-fan col-12 mb-2 text-decoration-none" style="color: black">
+            <div class="media d-flex align-items-center">
+                <div class="a-class d-inline-flex bg-danger rounded-pill text-decoration-none mr-3">
+                    <span class="my-auto text-white mx-auto p-2">Ona tili</span>
+                </div>
+                <div class="media-body d-flex">
+                    <div class="ml-auto">
+                        <span class="text-secondary">4ta fayl, 37ta mavzu</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'student:fan' %}" class="a-fan col-12 mb-2 text-decoration-none" style="color: black">
+            <div class="media d-flex align-items-center">
+                <div class="a-class d-inline-flex bg-warning rounded-pill text-decoration-none mr-3">
+                    <span class="my-auto text-white mx-auto p-2">Matematika</span>
+                </div>
+                <div class="media-body d-flex">
+                    <div class="ml-auto">
+                        <span class="text-secondary">8ta fayl, 24ta mavzu</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    {#    /////////////////////#}
+    {#    Dars jadvali#}
+    <div class="a-dars-jadvali row mt-3" style="display: none">
+        <div class="col-12">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingDushanba">
+                        <h2 class="mb-0">
+                            <button class="btn-link btn-block text-left text-decoration-none"
+                                    style="border: none; background-color: rgba(0, 0, 0, 0)" type="button"
+                                    data-toggle="collapse" data-target="#collapseDushanba" aria-expanded="true"
+                                    aria-controls="collapseDushanba">
+                                Dushanba
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseDushanba" class="collapse show" aria-labelledby="headingDushanba"
+                         data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul class="list-group list-group-horizontal w-100">
+                                <li class="list-group-item w-50">8:00 - 8:45</li>
+                                <li class="list-group-item w-50">Ona tili</li>
+                            </ul>
+                            <ul class="list-group list-group-horizontal w-100">
+                                <li class="list-group-item w-50">8:50 - 9:35</li>
+                                <li class="list-group-item w-50 text-danger">Dars yo'q</li>
+                            </ul>
+                            <ul class="list-group list-group-horizontal w-100">
+                                <li class="list-group-item w-50 bg-info text-white">9:40 - 10:25</li>
+                                <li class="list-group-item w-50">Fizika</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSeshanba">
+                        <h2 class="mb-0">
+                            <button class="btn-link btn-block text-left text-decoration-none collapsed"
+                                    style="border: none; background-color: rgba(0, 0, 0, 0)" type="button"
+                                    data-toggle="collapse" data-target="#collapseSeshanba" aria-expanded="false"
+                                    aria-controls="collapseSeshanba">
+                                Seshanba
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeshanba" class="collapse" aria-labelledby="headingSeshanba" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul class="list-group list-group-horizontal w-100">
+                                <li class="list-group-item w-50">8:00 - 8:45</li>
+                                <li class="list-group-item w-50">Kimyo</li>
+                            </ul>
+                            <ul class="list-group list-group-horizontal w-100">
+                                <li class="list-group-item w-50">8:50 - 9:35</li>
+                                <li class="list-group-item w-50">Adabiyot</li>
+                            </ul>
+                            <ul class="list-group list-group-horizontal w-100">
+                                <li class="list-group-item w-50">9:40 - 10:25</li>
+                                <li class="list-group-item w-50">Tasviriy san'at</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingChorshanba">
+                        <h2 class="mb-0">
+                            <button class="btn-link btn-block text-left text-decoration-none collapsed"
+                                    style="border: none; background-color: rgba(0, 0, 0, 0)" type="button"
+                                    data-toggle="collapse" data-target="#collapseChorshanba" aria-expanded="false"
+                                    aria-controls="collapseChorshanba">
+                                Chorshanba
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseChorshanba" class="collapse" aria-labelledby="headingChorshanba"
+                         data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul class="list-group list-group-horizontal w-100">
+                                <li class="list-group-item w-50">8:00 - 8:45</li>
+                                <li class="list-group-item w-50">Jismoniy tarbiya</li>
+                            </ul>
+                            <ul class="list-group list-group-horizontal w-100">
+                                <li class="list-group-item w-50">8:50 - 9:35</li>
+                                <li class="list-group-item w-50">Musiqa</li>
+                            </ul>
+                            <ul class="list-group list-group-horizontal w-100">
+                                <li class="list-group-item w-50">9:40 - 10:25</li>
+                                <li class="list-group-item w-50 text-danger">Matematika</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {#    /////////////////////#}
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/account.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block home %}{% url 'tashkilot:dashboard' %}{% endblock %}
+
+{% block content %}
+    <div class="card">
+        <div class="card-header">Guruh qo'shish</div>
+        <div class="card-body">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit" class="btn btn-primary">Qo'shish</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
